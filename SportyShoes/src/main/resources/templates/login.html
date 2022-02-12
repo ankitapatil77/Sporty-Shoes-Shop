@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title> 
+<style>
+	Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+   background-color: #FFC0CB;
+
+}  
+button {   
+	  justify-content: center;
+       background-color: #4CAF50;   
+       width: 100%;  
+        color: white;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }  
+          
+ form {   
+        border: 1.4px solid black;
+ 		width: 45%;
+ 		margin: 0 auto;
+    }   
+ input[type=text], input[type=password] {  
+ 	justify-content: center;  
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+   
+        
+     
+ .container {   
+  		  
+  justify-content: center;
+        padding: 15px;   
+        background-color: #FFF8DC;  
+    }   
+
+
+</style>
+</head>
+<body >
+<div aling="center">
+<h2 style="Color:blue">Welcome To Sporty Shoes Web App !!!  </h2>
+<h3 style="Color:black">"The World's Most Comfortable Shoes"</h3>
+
+
+
+	<table width="100%" height="100%" border="0" cellpadding="0"
+		align="center">
+		<tr>
+			<td align="center" valign="middle">
+				<table class="table-bordered" width="350" border="0" cellpadding="3"
+					cellspacing="3" bgcolor="#ffffff">
+
+					<form action="#" th:action="@{/adminlogin}" th:object="${user}"
+						method="post">
+
+
+						
+<table border="1" style="text-align:center; margin-left:auto;margin-right:auto;" > 
+<tr><td><br/>&nbsp;&nbsp;Please Enter Your Username: <input type="text" name="username" placeholder="username">&nbsp;&nbsp;<br/><br/>
+&nbsp;&nbsp;Please Enter Your Password: <input type="password" name="password" placeholder="password">&nbsp;&nbsp;<br/><br/></td></tr>
+<tr><td><input type="submit" value="login"></td></tr>
+            <br/>
+            Remember me <input type="checkbox" checked="checked">  <br/>
+           
+  </table> 
+ 					
+					</form>
+
+				</table>
+				</div>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
